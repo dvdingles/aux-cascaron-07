@@ -6,10 +6,10 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Dav(props) {
-  const { nodes, materials } = useGLTF("/6DROTULO.gltf");
+  const { nodes, materials } = useGLTF("/9DROTULO.gltf");
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, -Math.PI / 2, 0]}>
+      <group rotation={[-Math.PI / 2, Math.PI / 2, 0]}>
         <mesh
           castShadow
           receiveShadow
@@ -33,4 +33,4 @@ export function Dav(props) {
   );
 }
 
-useGLTF.preload("/6DROTULO.gltf");
+useGLTF.preload("/9DROTULO.gltf");
